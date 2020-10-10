@@ -1,0 +1,26 @@
+.headerBox {
+    height: 1.28rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000000;
+}
+.jkmWrap {
+    flex: 1;
+    background-image: url(../img/background.png);
+    background-size: 100% auto;
+    background-position: center center;
+    padding-top: 2rem;
+    min-height: calc(100vh - 48px);
+}
+.jkmBox {
+    display: block;
+    width: 9.04rem;
+    min-height: 9.52rem;
+    background-color: white;
+    border-radius: 0.213333rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0.56rem 0.48rem 0.56rem;
+}
