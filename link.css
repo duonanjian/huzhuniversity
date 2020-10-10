@@ -8,7 +8,7 @@
 }
 .jkmWrap {
     flex: 1;
-    background-image: url(../img/background.png);
+    background-image: url(img/background.png);
     background-size: 100% auto;
     background-position: center center;
     padding-top: 2rem;
