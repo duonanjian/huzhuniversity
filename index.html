@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>hshssj</title>
+		<link type="text/css" rel="stylesheet" href="css/zuo.css"/>
+	</head>
+	
+	
+	<body>
+		
+		<div id="app">
+			<div class="home">
+				<div class="pd1">
+					<div class="word1">
+						VUE 记事本
+					</div>
+				</div>
+				<div class="pd2">
+						<input type="text" placeholder="请输入内容" class="shuru" v-model="inputvalue" @keyup.enter="add"/>
+						<button style="background-color: red;color: white;"  @click="dee">清空</button>
+						<input type="button" value="提交" class="tijiao" @click="add"/>
+				</div>
+				<div >
+					<ul>
+						<li v-for="(item,index) in list" class="pd3">
+							{{index+1}}.{{item}}
+							<button @click="remove(index)" class="remove" >删除</button>
+						</li>
+					</ul>
+				</div>
+				
+				<input type="button" value="全部删除" class="shanchu" @click="alldee"/>
+				
+				
+				
+				
+				<div class="bottom">
+					@copyright
+				</div>
+				
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
