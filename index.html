@@ -2,46 +2,30 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>hshssj</title>
-		<link type="text/css" rel="stylesheet" href="css/zuo.css"/>
+		<title>仅仅是蒋介石介绍介绍</title>
+		<link type="text/css" rel="stylesheet" href="css/link.css"/>
 	</head>
-	
-	
 	<body>
-		
-		<div id="app">
-			<div class="home">
-				<div class="pd1">
-					<div class="word1">
-						VUE 记事本
+		<div class="forFixed">
+					<div class="headerBox layui-hide-sm layui-hide-md layui-hide-lg">
+						<a href="JavaScript:history.back(-1);"><img src="img/back.png"></a>
+						<h4>进校码</h4>
+					</div>
+					<div class="mainBox jkmWrap">
+						<div class="jkmBox">
+							<h4 class="xsxm">周非的进校码</h4>
+							<p class="xh">学号：2019388158</p>
+							<p class="lxdh">联系电话：17346882089</p>
+							<p class="xsxy">学院：工学院</p>
+							<p class="xsbj">班级：20193881</p>
+							<p class="isAllowOut font-green">是否允许出校：允许</p>
+							<p class="restTime"></p>
+							<p class="dqzt"></p>
+							<img src="img/erweima.png">
+							<h6>温馨提示:如果要出校，请在门口扫码出校，并在规定时间( AM 06:00 到 PM 22:00 )内返校。若超时返校，则15天内不可再次出校。</h6>
+						</div>
+						<button type="button" class="sqfx refresh-btn">点击查看状态</button>
 					</div>
 				</div>
-				<div class="pd2">
-						<input type="text" placeholder="请输入内容" class="shuru" v-model="inputvalue" @keyup.enter="add"/>
-						<button style="background-color: red;color: white;"  @click="dee">清空</button>
-						<input type="button" value="提交" class="tijiao" @click="add"/>
-				</div>
-				<div >
-					<ul>
-						<li v-for="(item,index) in list" class="pd3">
-							{{index+1}}.{{item}}
-							<button @click="remove(index)" class="remove" >删除</button>
-						</li>
-					</ul>
-				</div>
-				
-				<input type="button" value="全部删除" class="shanchu" @click="alldee"/>
-				
-				
-				
-				
-				<div class="bottom">
-					@copyright
-				</div>
-				
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-		<script src="./js/main.js"></script>
 	</body>
 </html>
